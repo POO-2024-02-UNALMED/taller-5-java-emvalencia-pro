@@ -1,6 +1,4 @@
 package zooAnimales;
-import java.util.ArrayList;
-
 import gestion.Zona;
 public class Animal {
     private static int totalAnimales=0;
@@ -74,9 +72,9 @@ public class Animal {
 
     public String toString(){
         if (zona==null) {
-        return "Mi nombre es " +nombre+  ", tengo una edad de" +edad+ ", habito en "+habitat+" y mi género es "+genero;
+        return "Mi nombre es " +nombre+  ", tengo una edad de" +edad+ ", habito en "+habitat+" y mi genero es "+genero;
         } else{
-        return "Mi nombre es " +nombre+  ", tengo una edad de" +edad+ ", habito en "+habitat+" y mi género es "+genero+", la zona en la que me ubico es"+zona+", en el "+zona.getZoo();
+        return "Mi nombre es " +nombre+  ", tengo una edad de" +edad+ ", habito en "+habitat+" y mi genero es "+genero+", la zona en la que me ubico es"+zona+", en el "+zona.getZoo();
         }
     }
 
