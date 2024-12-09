@@ -70,9 +70,10 @@ public class Animal {
         return ("Mamiferos: "+Mamifero.cantidadMamiferos()+"\nAves: "+Ave.cantidadAves()+"\nReptiles: "+Reptil.cantidadReptiles()+"\nPeces: "+Pez.cantidadPeces()+"\nAnfibios: "+Anfibio.cantidadAnfibios());
     }
 
+    @Override
     public String toString(){
         if (zona==null) {
-        return "Mi nombre es " +nombre+  ", tengo una edad de" +edad+ ", habito en "+habitat+" y mi genero es "+genero;
+        return "Mi nombre es " +nombre+  ", tengo una edad de " +edad+ ", habito en "+habitat+" y mi genero es "+genero;
         } else{
         return "Mi nombre es " +nombre+  ", tengo una edad de " +edad+ ", habito en "+habitat+" y mi genero es "+genero+", la zona en la que me ubico es "+zona+", en el "+zona.getZoo();
         }
