@@ -9,7 +9,7 @@ public class Pez extends Animal {
     private String colorEscamas;
     private int cantidadAletas;
 
-    public Pez(){listado.add(this);}
+    public Pez(){}
 
     public Pez(String nombre,int edad,String habitat,String genero,String colorEscamas,int cantidadAletas){
         this.setNombre(nombre);
@@ -55,11 +55,11 @@ public class Pez extends Animal {
 
     public  static Pez crearSalmon(String nombre,int edad,String genero){
         salmones++;
-        return new Pez(nombre,edad,"océano",genero,"rojo",6);
+        return new Pez(nombre,edad,"oceano",genero,"rojo",6);
     }
 
     public static Pez crearBacalao(String nombre,int edad,String genero){
         bacalaos++;
-        return new Pez(nombre,edad,"océano",genero,"gris",6);
+        return new Pez(nombre,edad,"oceano",genero,"gris",6);
     }
 }
